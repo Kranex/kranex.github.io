@@ -39,6 +39,7 @@
       // listen for mouse being pressed.
       window.addEventListener('mousedown', function (e) {
         // when pressed set the start x and y, and flip the boolean.
+
         startx = e.pageX;
         starty = e.pageY;
         mousedown = true;
@@ -145,8 +146,9 @@
 </script>
 <h1>Basic Orbit Simulator</h1>
 <p>Give it a go! Click and drag to fire the red ball into orbit around the dot!</p>
-<p> This simulator, shows how if an object accelerates towards a fixed point, it can be placed in an 'orbit' provided it is given a bit of velocity perpendicular to the direction of acceleration. This still works when the point becomes a circle or a sphere, provided the object is given enough force, it will perpetually fall around the source of acceleration. </p>
+<p> The acceleration is fixed at 10px/s^2 towards the dot from any point. For that reason these orbits do not simulate the orbits that you would witness of a satilite in orbit around earth. The intent of this simululator is not show how gravity works but to show how acceleration towards a fixed point works.</p>
+<p> This simulator, shows how if an object accelerates towards a fixed point, it can be placed in an 'orbit' provided it is given a bit of velocity perpendicular to the direction of acceleration. This still works when the point becomes a circle or a sphere. Provided the object is given enough velocity, it's 'orbit' will be larger than the body it is orbiting and thus, it will perpetually fall around the source of acceleration. </p>
 <p>The only equations used in this are; ,<b>v = u + at</b>, a fundemental equation of motion, <b>s = vt</b>, the distance travelled in a set amount of time, and some basic trigonometry to break the velocity and acceleration into their respective x and y components.</p>
-<p>You can check the source code and see that there is nothing shady going on by either, right clicking and selecting "view source" or visiting the github source via this link: <a href="https://github.com/Kranex/kranex.github.io/blob/master/orbit-simulator/index.html">https://github.com/Kranex/kranex.github.io/blob/master/orbit-simulator/index.html</a></p>
+<p>You can check the source code and see that there is nothing shady going on, by either right clicking and selecting "view source" or visiting the github source via this link: <a href="https://github.com/Kranex/kranex.github.io/blob/master/orbit-simulator/index.html">https://github.com/Kranex/kranex.github.io/blob/master/orbit-simulator/index.html</a></p>
 </body>
 </html>
